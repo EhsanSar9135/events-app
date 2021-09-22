@@ -2,6 +2,7 @@ import { useRouter } from "next/dist/client/router";
 import EventContent from "../../Components/EventDetails/EventContent";
 import EventLogistics from "../../Components/EventDetails/EventLogistics";
 import EventSummary from "../../Components/EventDetails/EventSummary";
+import ErrorAlert from "../../components/UI/ErrorAlert";
 import { getEventById } from "../../data";
 
 const EventDetailPage = () => {
@@ -9,7 +10,11 @@ const EventDetailPage = () => {
    const eventId = router.query.eventId;
    const event = getEventById(eventId);
    if (!event) {
-      return <p>No event found!</p>;
+      return (
+         <ErrorAlert>
+            <p>No event found!</p>
+         </ErrorAlert>
+      );
    }
    return (
       <>
