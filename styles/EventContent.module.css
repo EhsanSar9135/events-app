@@ -1,9 +1,8 @@
 .content {
-  font-size: 1.2rem;
-  color: #3a3a3a;
-  width: 90%;
-  max-width: 40em;
-  margin: auto;
-  margin-top: 6rem;
-  text-align: center;
+   font-size: 1.2rem;
+   color: #3a3a3a;
+   width: 90%;
+   max-width: 40em;
+   margin: 6rem auto;
+   text-align: center;
 }
