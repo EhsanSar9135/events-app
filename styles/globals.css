@@ -8,6 +8,8 @@
 
 body {
    font-family: "Open Sans", "Lato", sans-serif;
+   color: #414141;
+   background-color: #e4f1f1;
 }
 
 h1,
@@ -17,4 +19,14 @@ h4,
 h5,
 h6 {
    font-family: "Lato", sans-serif;
+   color: #2b2b2b;
+}
+
+ul {
+   list-style: none;
+}
+
+.center {
+   margin: auto;
+   text-align: center;
 }
