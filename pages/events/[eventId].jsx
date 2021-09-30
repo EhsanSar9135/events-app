@@ -3,9 +3,10 @@ import EventLogistics from "../../Components/EventDetails/EventLogistics";
 import EventSummary from "../../Components/EventDetails/EventSummary";
 import { getEventById, getFeaturedEvents } from "../../helpers/api-util";
 import Head from "next/head";
+import Comments from "../../components/input/Comments";
 
 const EventDetailPage = ({ selectedEvent }) => {
-   const { title, date, location, image, description } = selectedEvent;
+   const { title, date, location, image, description, id } = selectedEvent;
    if (!selectedEvent) {
       return (
          <div>
@@ -29,6 +30,7 @@ const EventDetailPage = ({ selectedEvent }) => {
          <EventContent>
             <p>{description}</p>
          </EventContent>
+         <Comments eventId={id} />
       </>
    );
 };
