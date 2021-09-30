@@ -16,7 +16,7 @@ const EventItem = ({ event }) => {
    const exploreLink = `/events/${id}`;
    return (
       <li className={classes.item}>
-         <Image src={image} alt={title} width={250} height={160} />
+         <Image src={image} alt={title} width={300} height={300} />
          <section className={classes.content}>
             <div className={classes.summary}>
                <h2>{title}</h2>
